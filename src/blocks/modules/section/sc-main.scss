@@ -4,11 +4,12 @@
         background-image: url(#{$imgFolder}hd-wd.png);
         background-size: cover;
         position: relative;
-        
+        display: flex;
+        justify-content: center;
 
         &__tl {
             
-            // margin-top: 197px;
+            margin-top: 197px;
             @include fnt-fira (#FFFFFF, 56px, 67px, 500);
             letter-spacing: 0.04em;
             width: 540px;
