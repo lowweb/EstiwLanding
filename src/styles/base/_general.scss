@@ -4,9 +4,51 @@ h1, h2, h3, h4, h5, h6, ul {
 }
 
 .container {
-    @include container();
-    @include sm(max-width, rem(510));
-    @include md(max-width, rem(690));
-    @include lg(max-width, rem(930));
-    @include xl(max-width, rem(1110));
+    // @include container();
+    // @include sm(max-width, rem(510));
+    // @include md(max-width, rem(690));
+    // @include lg(max-width, rem(930));
+    // @include xl(max-width, rem(1110));
+}
+
+* {
+	margin: 0;
+	padding: 0;
+	text-decoration: none;
+	list-style-type: none;
+	box-sizing: border-box;
+	// outline: none; //так дизайнер попросил
+}
+
+html 
+	{
+	 height: 100%;
+	 box-sizing: border-box;
+	 margin: 0;
+}
+
+*:before, *:after
+{
+	box-sizing: inherit;
+}
+
+body {
+	height: 100%;
+	overflow: hidden;
+}
+
+
+
+.main-content {
+	overflow: hidden;
+	display: flex;
+	flex-direction: column;
+	height: 100%;
+}
+
+
+.fx-rw {
+	display: flex;
+	flex-direction: row;
+	flex-wrap: wrap;
 }

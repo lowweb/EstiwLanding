@@ -7,32 +7,26 @@ gulp.task("smart-grid", (cb) => {
     smartgrid("./src/styles/vendor/import/", {
         outputStyle: "scss",
         filename: "_smart-grid",
-        columns: 12, // number of grid columns
-        offset: "1.875rem", // gutter width - 30px
-        mobileFirst: true,
-        mixinNames: {
-            container: "container"
+        columns: 12, /* number of grid columns */
+    offset: '30px', /* gutter width px || % || rem */
+    mobileFirst: false, /* mobileFirst ? 'min-width' : 'max-width' */
+    container: {
+        maxWidth: '1128px', /* max-width оn very large screen */
+        fields: '30px' /* side fields */
+    },
+    breakPoints: {
+        lg: {
+            width: '1440px', /* -> @media (max-width: 1100px) */
         },
-        container: {
-            fields: "0.9375rem" // side fields - 15px
+        md: {
+            width: '768px'
         },
-        breakPoints: {
-            xs: {
-                width: "20rem" // 320px
-            },
-            sm: {
-                width: "36rem" // 576px
-            },
-            md: {
-                width: "48rem" // 768px
-            },
-            lg: {
-                width: "62rem" // 992px
-            },
-            xl: {
-                width: "72rem" // 1200px
-            }
+        sm: {
+            width: '540px',
+            fields: '15px' /* set fields only if you want to change container.fields */
         }
+        
+    }
     });
     cb();
 });

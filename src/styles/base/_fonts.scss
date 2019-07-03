@@ -1,0 +1,10 @@
+@import url('https://fonts.googleapis.com/css?family=Fira+Sans:200,300,400,500,600,700,800,900&display=swap');
+
+@mixin fnt-fira ($color, $size, $height, $weight) {
+	font-family: 'Fira Sans', sans-serif;
+	line-height: $height;
+	font-weight: $weight;
+	font-size: $size;
+	color: $color;
+	font-style: normal;
+}
