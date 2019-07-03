@@ -4,6 +4,7 @@
     height: 112px;
     padding-left: 46px;
     padding-right: 30px;
+    width: 100%;
  
     &-tr {
         display: flex;
@@ -35,10 +36,10 @@
     &__tel {
      display: flex;
      align-items: center;
+     width: 227px;
      font-size: 24px;
- line-height: 24px;
- /* identical to box height, or 100% */
- letter-spacing: 0.01em;
+    line-height: 24px;
+    letter-spacing: 0.01em;
  
      & img {
          margin-right: 18px;

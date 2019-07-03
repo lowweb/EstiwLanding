@@ -16,7 +16,7 @@ gulp.task("smart-grid", (cb) => {
     },
     breakPoints: {
         lg: {
-            width: '1440px', /* -> @media (max-width: 1100px) */
+            width: '1128px', /* -> @media (max-width: 1100px) */
         },
         md: {
             width: '768px'
