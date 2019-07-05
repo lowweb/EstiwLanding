@@ -5,8 +5,24 @@ box-sizing: border-box;
 box-shadow: 0px 8px 30px rgba(55, 63, 81, 0.2);
 border-radius: 3px;
 width: 360px;
+max-width: 360px;
 height: 428px;
 display: block;
-margin-top: 80px;
-margin-left: 205px;
+
+
+@include col();
+@include size (4);
+@include size-md(6.5);
+@include size-sm(6.5);
+@include size-xs(12);
+@include sm-block () {
+    width: 348px;
+    max-width: 348px;
+};
+@include xs-block () {
+    // width: 348px;
+    min-width: 280px;
+    max-width: 100%;
+};
+
 }

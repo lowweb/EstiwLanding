@@ -4,26 +4,42 @@
     height: 112px;
     padding-left: 46px;
     padding-right: 30px;
-    width: 100%;
+   
  
     &-tr {
         display: flex;
         flex-direction: row;
         align-items: center;
         width: 100%;
-    }
+        justify-content: space-between;
  
+    }
+     &__logo {
+       min-width: 202px;
+     }
     &__menu {
         display: flex;
         align-items: center;
         margin: 0 auto;
         justify-content: space-between;
         min-width: 500px;
+
+        @media only screen and (max-width: 1100px) {
+            display: none;
+        }
  
         &-itm{
          display: flex;
          align-items: center;  
          color: #FFFFFF;
+        //  margin-right: 80px;
+
+         &:last-child {
+            //  margin-right: 0px;
+         }
+         & > a {
+             flex: 1 1 auto;
+         }
          &:hover {
              color: #FFFFFF;
          }
@@ -36,10 +52,15 @@
     &__tel {
      display: flex;
      align-items: center;
-     width: 227px;
      font-size: 24px;
-    line-height: 24px;
-    letter-spacing: 0.01em;
+     line-height: 24px;
+     min-width: 227px;
+     letter-spacing: 0.01em;
+     flex: 0 0 auto;
+
+     @include xs-block () {
+        display:none;
+     };
  
      & img {
          margin-right: 18px;

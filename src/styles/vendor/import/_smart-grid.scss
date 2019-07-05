@@ -1,22 +1,23 @@
 $columns: 12;
 $atom: (100% / $columns);
 
-$break_lg: 1128px;
-$break_md: 768px;
-$break_sm: 540px;
+$break_md: 1140px;
+$break_sm: 768px;
+$break_xs: 692px;
 
-$offset: 30px;
-$offset_lg: $offset;
+$offset: 24px;
 $offset_md: $offset;
 $offset_sm: $offset;
+$offset_xs: $offset;
 
 $offset_one_side: ($offset / 2);
-$offset_lg_one_side: ($offset_lg / 2);
 $offset_md_one_side: ($offset_md / 2);
 $offset_sm_one_side: ($offset_sm / 2);
+$offset_xs_one_side: ($offset_xs / 2);
 
 $fields: 30px;
 $fields_sm: 15px;
+$fields_xs: 15px;
 
 @mixin wrapper-full(){
     padding-left: $fields;
@@ -25,6 +26,11 @@ $fields_sm: 15px;
     @include sm-block(){
         padding-left: $fields_sm;
         padding-right: $fields_sm;
+    }
+
+    @include xs-block(){
+        padding-left: $fields_xs;
+        padding-right: $fields_xs;
     }
 }
 
@@ -84,11 +90,6 @@ $fields_sm: 15px;
     width: #{calc(#{$val} - #{$offset})};
 }
 
-@mixin size-lg($n){
-    $val: 100% / $columns * $n;
-    @include lg(width, #{calc(#{$val} - #{$offset_lg})});
-}
-
 @mixin size-md($n){
     $val: 100% / $columns * $n;
     @include md(width, #{calc(#{$val} - #{$offset_md})});
@@ -97,6 +98,11 @@ $fields_sm: 15px;
 @mixin size-sm($n){
     $val: 100% / $columns * $n;
     @include sm(width, #{calc(#{$val} - #{$offset_sm})});
+}
+
+@mixin size-xs($n){
+    $val: 100% / $columns * $n;
+    @include xs(width, #{calc(#{$val} - #{$offset_xs})});
 }
 
 @mixin shift($n){
@@ -129,38 +135,6 @@ $fields_sm: 15px;
 @mixin shift-padding-right($n){
     $val: 100% / $columns * $n;
     padding-right: #{calc(#{$val} + #{$offset_one_side})};
-}
-
-@mixin shift-lg($n){
-    $val: 100% / $columns * $n;
-    @include lg(margin-left, #{calc(#{$val} + #{$offset_lg_one_side})});
-    @include lg(margin-right, #{calc(#{$val} + #{$offset_lg_one_side})});
-}
-
-@mixin shift-lg-left($n){
-    $val: 100% / $columns * $n;
-    @include lg(margin-left, #{calc(#{$val} + #{$offset_lg_one_side})});
-}
-
-@mixin shift-lg-right($n){
-    $val: 100% / $columns * $n;
-    @include lg(margin-right, #{calc(#{$val} + #{$offset_lg_one_side})});
-}
-
-@mixin shift-lg-padding($n){
-    $val: 100% / $columns * $n;
-    @include lg(padding-left, #{calc(#{$val} + #{$offset_lg_one_side})});
-    @include lg(padding-right, #{calc(#{$val} + #{$offset_lg_one_side})});
-}
-
-@mixin shift-lg-padding-left($n){
-    $val: 100% / $columns * $n;
-    @include lg(padding-left, #{calc(#{$val} + #{$offset_lg_one_side})});
-}
-
-@mixin shift-lg-padding-right($n){
-    $val: 100% / $columns * $n;
-    @include lg(padding-right, #{calc(#{$val} + #{$offset_lg_one_side})});
 }
 
 @mixin shift-md($n){
@@ -227,16 +201,36 @@ $fields_sm: 15px;
     @include sm(padding-right, #{calc(#{$val} + #{$offset_sm_one_side})});
 }
 
-@mixin lg($name, $value){
-    @media screen and (max-width: $break_lg){
-        #{$name}: $value;
-    }
+@mixin shift-xs($n){
+    $val: 100% / $columns * $n;
+    @include xs(margin-left, #{calc(#{$val} + #{$offset_xs_one_side})});
+    @include xs(margin-right, #{calc(#{$val} + #{$offset_xs_one_side})});
 }
 
-@mixin lg-block(){
-    @media screen and (max-width: $break_lg){
-        @content;
-    }
+@mixin shift-xs-left($n){
+    $val: 100% / $columns * $n;
+    @include xs(margin-left, #{calc(#{$val} + #{$offset_xs_one_side})});
+}
+
+@mixin shift-xs-right($n){
+    $val: 100% / $columns * $n;
+    @include xs(margin-right, #{calc(#{$val} + #{$offset_xs_one_side})});
+}
+
+@mixin shift-xs-padding($n){
+    $val: 100% / $columns * $n;
+    @include xs(padding-left, #{calc(#{$val} + #{$offset_xs_one_side})});
+    @include xs(padding-right, #{calc(#{$val} + #{$offset_xs_one_side})});
+}
+
+@mixin shift-xs-padding-left($n){
+    $val: 100% / $columns * $n;
+    @include xs(padding-left, #{calc(#{$val} + #{$offset_xs_one_side})});
+}
+
+@mixin shift-xs-padding-right($n){
+    $val: 100% / $columns * $n;
+    @include xs(padding-right, #{calc(#{$val} + #{$offset_xs_one_side})});
 }
 
 @mixin md($name, $value){
@@ -259,6 +253,18 @@ $fields_sm: 15px;
 
 @mixin sm-block(){
     @media screen and (max-width: $break_sm){
+        @content;
+    }
+}
+
+@mixin xs($name, $value){
+    @media screen and (max-width: $break_xs){
+        #{$name}: $value;
+    }
+}
+
+@mixin xs-block(){
+    @media screen and (max-width: $break_xs){
         @content;
     }
 }
