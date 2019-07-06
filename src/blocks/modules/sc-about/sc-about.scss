@@ -36,14 +36,7 @@
 	&__chk-inf{
 		@include col();
         @include size(3);
-        @include fnt-lucida (#373F51, 16px, 24px, normal);
-        display: flex;
-		&:before {
-			content: url(#{$imgFolder}info-chk.png);
-			width: 40px;
-			height: 40px;
-			margin-right: 16px;
-		}
+        
 	}
 
 	&__assoc-img {
@@ -51,6 +44,13 @@
         @include size(3);
         background-blend-mode: color, normal;
 		opacity: 0.4;
+		filter: grayscale(1);
+		cursor: pointer;
+		&:hover {
+			opacity: 1;
+			filter: grayscale(0);	
+		}
+
 	}
 
 }

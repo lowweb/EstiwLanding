@@ -28,19 +28,19 @@
 	&__cargo-itm {
 		@include col();
 		@include size(5.45);
-		@include fnt-fira (#00171F, 17px, 180%, normal);
-		display: flex;
-		align-items: center;
+		// @include fnt-fira (#00171F, 17px, 180%, normal);
+		// display: flex;
+		// align-items: center;
 
-		&:before {
-			content: "";
-			width: 5px;
-			height: 5px;
-			border-radius: 50%;
-			background-color: #0073BE;
-			margin-right: 10px;
+		// &:before {
+		// 	content: "";
+		// 	width: 5px;
+		// 	height: 5px;
+		// 	border-radius: 50%;
+		// 	background-color: #0073BE;
+		// 	margin-right: 10px;
 
-		}
+		// }
 	}
 
 	&__dtd {

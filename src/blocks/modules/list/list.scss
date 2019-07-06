@@ -1,0 +1,17 @@
+.list {
+	@include fnt-fira (#373F51, 17px, 180%, normal);
+		display: flex;
+		align-items: center;
+
+		&:before {
+			align-self: flex-start;
+    		margin-top: 12px;
+			content: "";
+			width: 5px;
+			height: 5px;
+			border-radius: 50%;
+			background-color: #0073BE;
+			margin-right: 10px;
+
+		}
+}

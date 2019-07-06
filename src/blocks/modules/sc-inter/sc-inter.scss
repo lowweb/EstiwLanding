@@ -1,0 +1,28 @@
+.sc-inter {
+	background-image: url(#{$imgFolder}img-inter-back.png);
+    background-size: cover;
+	&__inf {
+		height: 801px;
+		padding-top: 80px;
+
+	}
+	&__ocean-fr {
+		@include col();
+        @include size(6);
+	}
+
+	&__advant {
+		@include col();
+        @include size(6);
+	}
+
+	&__check-blk {
+		background-color: #F3F3F3;
+		padding: 56px 0 80px 0;
+	}
+
+	&__check-itm {
+		@include col();
+        @include size(4);
+	}
+}
