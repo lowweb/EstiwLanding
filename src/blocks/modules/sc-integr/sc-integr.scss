@@ -6,7 +6,7 @@
 	&__ml {
 		margin-left: 96px;
 	}
-
+	
 	&__serv-itm {
 		@include col();
 		@include size(5.45);
@@ -47,15 +47,17 @@
 		background: linear-gradient(90deg, #0073BE 39.17%, rgba(0, 115, 190, 0) 99.03%), #00171F;
 		padding: 56px 0px;
 		position: relative;
+		height: 435px;
 	}
 	&__tx {
 		@include col-ib();
 		@include size(9);
 	}
 	&__img {
-		position: relative;
-		@include col-ib();
-		@include size(3);
+		width: 466px;
+		height: 160px;
+		position: absolute;
+		right: -200px;
 	}
 	&__car {
 		position: absolute;
@@ -68,9 +70,14 @@
 		position: absolute;
 		width: 209px;
 		height: 161px;
+		top: 190px;
 	}
 
 	&__wr {
 		display: flex;
+	}
+
+	&__itm {
+		position: relative;
 	}
 }
