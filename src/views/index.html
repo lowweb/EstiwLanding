@@ -26,69 +26,25 @@
         <link rel="stylesheet" href="../styles/main.css">
     </head>
     <body>
-            <div class="debugGrid">
-                    <div>
-                        <div>
-                            <div></div>
-                            <div></div>
-                            <div></div>
-                            <div></div>
-                            <div></div>
-                            <div></div>
-                            <div></div>
-                            <div></div>
-                            <div></div>
-                            <div></div>
-                            <div></div>
-                            <div></div>
-                            <div></div>
-                            <div></div>
-                            <div></div>
-                            <div></div>
-                            <div></div>
-                            <div></div>
-                            <div></div>
-                            <div></div>
-                            <div></div>
-                            <div></div>
-                            <div></div>
-                            <div></div>
-                        </div>
-                    </div>
-                </div>
-        <main class="main-content">	
+<div class="debugGrid">
+    <div>
+        <div><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div>
+        </div>
+    </div>
+</div>
+<main class="main-content">	                
+<!--      <div class="view"></div>
+            <div class="layout">
+        </div> -->
+    @@include("../blocks/modules/sc-main/sc-main.html")
+    @@include("../blocks/modules/sc-about/sc-about.html")
+    @@include("../blocks/modules/sc-ports/sc-ports.html")
+    @@include("../blocks/modules/sc-integr/sc-integr.html")               
+    <footer class="footer">
+        @@include("../blocks/modules/footer/footer.html")
+    </footer>	
 
-                <section class="sc-main">
-                        @@include("../blocks/modules/header/header.html")
-                        <div class="sg-wrp">
-                            <div class="sc-main__itm">
-                                <div class="sc-main__tl">
-                                    <div class="sc-main__tl-bg">Transport, Logistics & Forwarding</div>
-                                    <div class="sc-main__tl-sm">Full range of freight forwarding services</div>
-                                </div>
-                                
-                                <div class="request"></div>
-                
-                            </div>
-                            
-                        </div>
-                    </section>
-                       
-                
-                
-                     <div class="view"></div>
-                            <div class="layout">
-                            
-                        </div>
-                
-                
-                            <footer class="footer">
-                        @@include("../blocks/modules/footer/footer.html")
-                    </footer>	
-                    </div>
-                
-                
-                </main>
+</main>
         
         
         <script src="../js/main.js"></script>

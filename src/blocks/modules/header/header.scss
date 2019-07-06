@@ -2,8 +2,8 @@
     @include fnt-fira (#FFFFFF, 18px, 22px, 500);
     display: flex;
     height: 112px;
-    padding-left: 46px;
-    padding-right: 30px;
+    // padding-left: 46px;
+    // padding-right: 30px;
    
  
     &-tr {
@@ -16,6 +16,12 @@
     }
      &__logo {
        min-width: 202px;
+       margin-left: 46px;
+
+       @media only screen and (max-width: 1100px) {
+            margin-left: 26px;
+            flex: 1;
+        }
      }
     &__menu {
         display: flex;
@@ -57,6 +63,7 @@
      min-width: 227px;
      letter-spacing: 0.01em;
      flex: 0 0 auto;
+     margin-right: 30px;
 
      @include xs-block () {
         display:none;

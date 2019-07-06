@@ -7,7 +7,9 @@ border-radius: 3px;
 width: 360px;
 max-width: 360px;
 height: 428px;
-display: block;
+display: flex;
+flex-direction: column;
+padding: 24px;
 
 
 @include col();
@@ -15,14 +17,59 @@ display: block;
 @include size-md(6.5);
 @include size-sm(6.5);
 @include size-xs(12);
+
 @include sm-block () {
     width: 348px;
     max-width: 348px;
 };
+
 @include xs-block () {
     // width: 348px;
     min-width: 280px;
     max-width: 100%;
+    padding: 16px 24px;
 };
+
+&__tl {
+	 @include fnt-fira (#FFFFFF, 32px, 44px, 300);
+	 margin-bottom: 16px;
+}
+&__inp {
+	@include fnt-fira (rgba(55, 63, 81, 0.6), 13px, 15px, normal);
+	background: #FFFFFF;
+	border-radius: 3px;
+	margin-bottom: 20px;
+	height: 36px;
+	padding-left: 16px;
+	&::placeholder { /* Chrome, Firefox, Opera, Safari 10.1+ */
+ 	 color: rgba(55, 63, 81, 0.6);
+ 	 opacity: 1; /* Firefox */
+	}
+	&:-ms-input-placeholder { /* Internet Explorer 10-11 */
+	  color: rgba(55, 63, 81, 0.6);
+	}	
+
+	&::-ms-input-placeholder { /* Microsoft Edge */
+	  color: rgba(55, 63, 81, 0.6);
+	}
+
+}
+
+&__txa {
+
+	margin-bottom: 32px;
+	max-height: 72px;
+	height: 72px;
+	padding-top: 10px;
+}
+
+&__btn {
+	@include fnt-fira (#FFFFFF, 20px, 24px, 500);
+	background: #5C2D91;
+	box-shadow: inset 0px -3px 0px rgba(0, 0, 0, 0.3);
+	border-radius: 3px;
+	padding-top: 11px;
+	padding-bottom: 13px;
+}
 
 }

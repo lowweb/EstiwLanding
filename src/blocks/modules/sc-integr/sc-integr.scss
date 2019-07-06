@@ -1,0 +1,76 @@
+.sc-integr {
+	&__inf{
+		margin: 80px 0px;
+	}
+
+	&__ml {
+		margin-left: 96px;
+	}
+
+	&__serv-itm {
+		@include col();
+		@include size(5.45);
+		@include fnt-lucida (#373F51,17px,140%,normal);
+		height: 80px;
+		border-bottom: 1px dashed #B4B8C5;
+		display: flex;
+		align-items: center;
+
+		&:nth-last-child(-n+2) {
+			border-bottom: none;	
+		}
+
+		& > img {
+			margin-right: 15px;
+		}
+	}
+
+	&__cargo-itm {
+		@include col();
+		@include size(5.45);
+		@include fnt-fira (#00171F, 17px, 180%, normal);
+		display: flex;
+		align-items: center;
+
+		&:before {
+			content: "";
+			width: 5px;
+			height: 5px;
+			border-radius: 50%;
+			background-color: #0073BE;
+			margin-right: 10px;
+
+		}
+	}
+
+	&__dtd {
+		background: linear-gradient(90deg, #0073BE 39.17%, rgba(0, 115, 190, 0) 99.03%), #00171F;
+		padding: 56px 0px;
+		position: relative;
+	}
+	&__tx {
+		@include col-ib();
+		@include size(9);
+	}
+	&__img {
+		position: relative;
+		@include col-ib();
+		@include size(3);
+	}
+	&__car {
+		position: absolute;
+		width: 466px;
+		height: 280px;
+
+		right: 40px;
+	}
+	&__cargo {
+		position: absolute;
+		width: 209px;
+		height: 161px;
+	}
+
+	&__wr {
+		display: flex;
+	}
+}

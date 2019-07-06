@@ -1,0 +1,26 @@
+.sc-cap {
+	@include fnt-fira (#00171F, 48px, 58px, 500);
+	width: 100%;
+	// overflow: hidden;
+	display: inline-flex;
+	align-items: center;
+	
+
+	& > span {
+		flex: 0 0 auto;
+		margin: 0px 24px;
+	}
+
+	&:before,&:after {
+		content: "";
+		height: 2px;
+		flex: 1 0 auto;
+		vertical-align: middle;
+		background-color: #D5D7E1;
+		display: inline-block;
+	}
+}
+
+.sc-scap {
+	@include fnt-fira (#00171F, 32px, 44px, 300);
+}

@@ -1,5 +1,14 @@
 @import url('https://fonts.googleapis.com/css?family=Fira+Sans:200,300,400,500,600,700,800,900&display=swap');
 
+@font-face {font-family: "Lucida Grande";
+    src: url("//db.onlinewebfonts.com/t/cab0131554a65c43f6e73aafff8a9667.eot");
+    src: url("//db.onlinewebfonts.com/t/cab0131554a65c43f6e73aafff8a9667.eot?#iefix") format("embedded-opentype"),
+    url("//db.onlinewebfonts.com/t/cab0131554a65c43f6e73aafff8a9667.woff2") format("woff2"),
+    url("//db.onlinewebfonts.com/t/cab0131554a65c43f6e73aafff8a9667.woff") format("woff"),
+    url("//db.onlinewebfonts.com/t/cab0131554a65c43f6e73aafff8a9667.ttf") format("truetype"),
+    url("//db.onlinewebfonts.com/t/cab0131554a65c43f6e73aafff8a9667.svg#Lucida Grande") format("svg");
+}
+
 @mixin fnt-fira ($color, $size, $height, $weight) {
 	font-family: 'Fira Sans', sans-serif;
 	line-height: $height;
@@ -7,4 +16,43 @@
 	font-size: $size;
 	color: $color;
 	font-style: normal;
+}
+
+
+@mixin fnt-lucida ($color, $size, $height, $weight) {
+	font-family: 'Lucida Grande', arial;
+	line-height: $height;
+	font-weight: $weight;
+	font-size: $size;
+	color: $color;
+	font-style: normal;
+}
+.fnt-fr--3244 {
+	@include fnt-fira (#00171F, 32px, 44px, 300);
+}
+
+.fnt-fr--2530 {
+	@include fnt-fira (#00171F, 25px, 30px, 500);
+	letter-spacing: 0.01em;
+}
+.fnt-fr--3643 {
+	@include fnt-fira (#00171F, 36px, 43px, 300);
+}
+
+.fnt-lc--17 {
+	@include fnt-fira (#00171F, 17px, 180%, normal);
+}
+.ftn-lc--1421 {
+	@include fnt-lucida (rgba(55, 63, 81, 0.7), 14px, 21px, normal);
+
+}
+
+.fnt--bld {
+	font-weight: 500;
+}
+.fnt--wh {
+	color: #ffffff;
+}
+.fnt--c {
+	text-align: center;
 }
