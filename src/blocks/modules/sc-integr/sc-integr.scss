@@ -10,37 +10,17 @@
 	&__serv-itm {
 		@include col();
 		@include size(5.45);
-		@include fnt-lucida (#373F51,17px,140%,normal);
-		height: 80px;
-		border-bottom: 1px dashed #B4B8C5;
-		display: flex;
-		align-items: center;
-
 		&:nth-last-child(-n+2) {
 			border-bottom: none;	
 		}
-
-		& > img {
-			margin-right: 15px;
-		}
+		
 	}
 
 	&__cargo-itm {
 		@include col();
 		@include size(5.45);
-		// @include fnt-fira (#00171F, 17px, 180%, normal);
-		// display: flex;
-		// align-items: center;
 
-		// &:before {
-		// 	content: "";
-		// 	width: 5px;
-		// 	height: 5px;
-		// 	border-radius: 50%;
-		// 	background-color: #0073BE;
-		// 	margin-right: 10px;
-
-		// }
+		
 	}
 
 	&__dtd {

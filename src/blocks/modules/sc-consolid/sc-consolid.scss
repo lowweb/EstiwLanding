@@ -1,0 +1,20 @@
+.sc-consolid {
+	display: block;
+    position: relative;
+	padding: 80px 0px;
+
+	&__scap {
+		width: 862px;
+		line-height: 180%;
+	}
+
+	&__img {
+		@include col();
+        @include size(6);
+	}
+
+	&__inf {
+		@include col();
+        @include size(6);
+	}
+}

@@ -1,0 +1,15 @@
+.list-icn {
+	@include fnt-lucida (#373F51,17px,140%,normal);
+		height: 80px;
+		border-bottom: 1px dashed #B4B8C5;
+		display: flex;
+		align-items: center;
+
+		&:last-child {
+			border-bottom: none;	
+		}
+
+		& > img {
+			margin-right: 15px;
+		}
+}
