@@ -12,7 +12,7 @@ gulp.task("smart-grid", (cb) => {
         mobileFirst: false,
         container: {
         maxWidth: "1188px",
-        fields: "30px"
+        fields: "42px"
         },
         breakPoints: {
 
@@ -22,11 +22,11 @@ gulp.task("smart-grid", (cb) => {
         },
         sm: {
             width: "768px",
-            fields: "15px"
+            fields: "36px"
         },
         xs: {
             width: "692px",
-            fields: "15px"
+            fields: "32px"
         }
         }
     });
