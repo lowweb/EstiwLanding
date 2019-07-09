@@ -1,0 +1,98 @@
+.box-gr {
+	@include fnt-fira (#373F51, 17px, 180%, normal);
+	display: flex;
+	flex-wrap: no-wrap;
+	counter-reset: num;
+  	list-style: none;
+
+	&__item {
+		position: relative;
+		max-width: 370px;
+		// max-height: 134px;
+		// counter-increment: num;
+		overflow: hidden;
+		border: 1px solid green;
+		border-left: none;
+		background-color: green;
+		// box-sizing: border-box;
+		// border-radius: 3px;
+		// margin-right: 4px;
+		// background-image: url(#{$imgFolder}img-step1.svg);
+		// background-size: cover;
+
+
+		
+		& > span {
+			padding: 16px 16px 25px 26px;
+		    width: calc(100%-2px);
+		    height: calc(100%-2px);
+		    display: block;
+		    background-color: white;
+
+		    &:before {
+			border-top: 80px solid transparent;
+    border-left: 20px solid white;
+
+    border-bottom: 80px solid transparent;
+			content: '';
+			display: block;
+			position: absolute;
+  // position: absolute;
+  // left: 0px;
+  top:-12px;
+  left: -3px;
+		    
+		}
+}
+	
+		// padding: 16px 16px 25px 26px;
+		// border: 1px solid green;
+		// box-sizing: border-box;
+		// border-radius: 3px;
+		// margin-right: 4px;
+		// counter-increment: num;
+		// position: relative;
+		// overflow: hidden;
+
+		&:before {
+			border-top: 80px solid transparent;
+    border-left: 20px solid white;
+
+    border-bottom: 80px solid transparent;
+			content: '';
+			display: block;
+			position: absolute;
+  // position: absolute;
+  // left: 0px;
+  top:-12px;
+  left: -3px;
+			
+		// 	border-top: 80px solid transparent;
+  //   border-left: 30px solid #767676;
+  //   border-bottom: 80px solid transparent;
+
+
+		}
+		&:before {
+			// font-family: Fira Sans;
+		 //    font-style: normal;
+		 //    font-weight: 500;
+		 //    font-size: 220px;
+		 //    text-align: right;
+		 //    letter-spacing: 0.01em;
+		 //    color: rgba(213, 215, 225, 0.4);
+		 //    position: absolute;
+		 //    content: counter(num);
+		 //    top: 0px;
+		 //    left: 50%;
+		 //    transform: translate(-50%, -25%);
+		 //    /* height: 100%; */
+		 //    // display: flex;
+		 //    line-height: 264px;
+
+		}
+		&:last-child {
+			margin-right: 0px;
+		}
+	}
+}

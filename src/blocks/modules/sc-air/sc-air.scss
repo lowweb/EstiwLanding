@@ -1,0 +1,23 @@
+.sc-air {
+	padding: 80px 0px;
+	background-image: url(#{$imgFolder}img-sky.png);
+	// background-size: cover;
+	background-size: 100% 420px;
+	background-repeat: no-repeat;
+
+	&__tx {
+		@include col();
+		@include size(6);
+	}
+
+	&__img {
+		@include col();
+		@include size(6);
+	}
+
+	& .box-gr__item {
+		@include col();
+		@include size(4);
+	}
+
+}
