@@ -1,0 +1,16 @@
+.sc-lcl {
+	padding: 80px 0px;
+	background-image: url(../img/img-lcl.png);
+	background-size: cover;
+	background-repeat: no-repeat;
+  	background-position: 50% 50%;
+  	// & .sc-scap {
+  	// 	max-width: 936px;
+   //  	margin: 0 auto;
+  	// }
+
+  	& .sg__itm ul {
+		@include col();
+        @include size(6);
+  	}
+}

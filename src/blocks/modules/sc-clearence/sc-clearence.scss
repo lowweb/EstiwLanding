@@ -1,0 +1,12 @@
+.sc-clearence {
+	padding-top: 80px;
+
+	&__ls {
+		@include col();
+		@include size(6);
+	}
+	&__tx {
+		@include col();
+		@include size(6);
+	}
+}

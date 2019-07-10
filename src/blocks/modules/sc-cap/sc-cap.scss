@@ -23,4 +23,8 @@
 
 .sc-scap {
 	@include fnt-fira (#00171F, 32px, 44px, 300);
+
+	&--180 {
+		line-height: 180%;
+	}
 }
