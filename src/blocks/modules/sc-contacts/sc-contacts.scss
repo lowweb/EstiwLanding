@@ -1,3 +1,17 @@
 .sc-contacts {
 	padding-top: 80px;
+	position: relative;
+
+	&__blk {
+		position: absolute;
+		top: 43%;
+		transform: translate(0, -50%);
+		margin: 0 auto;
+		width: 100%;
+
+		& .card {
+			@include col ();
+			@include size(4);
+		}
+	}
 }

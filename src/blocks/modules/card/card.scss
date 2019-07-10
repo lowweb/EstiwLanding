@@ -1,0 +1,33 @@
+.card {
+	background-color: #FFFFFF;
+	border: 1px solid #D5D7E1;
+	box-sizing: border-box;
+	border-radius: 3px;
+	padding-top: 24px;
+	padding-bottom: 24px;
+	@include fnt-fira (#373F51, 17px, 180%, normal);
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	flex-direction: column;
+	
+
+	&__tl {
+		font-weight: 500;
+		font-size: 25px;
+		line-height: 30px;
+		margin-bottom: 20px;
+	}
+
+	&__svg{
+		width: 24px;
+		height: 24px;
+		vertical-align: middle;
+		margin-right: 7px;
+	}
+
+	&__tx {
+		display: block;
+	}
+
+}

@@ -63,6 +63,19 @@ body {
 	// height: 100%;
 }
 
+a {
+	color: #0073BE;
+	&:hover{
+		color: #5C2D91;
+	}
+
+	&.no-hov {
+		color: inherit;
+	&:hover{
+		color: inherit;
+		}
+	}
+}
 
 .fx-rw {
 	display: flex;
@@ -98,6 +111,13 @@ body {
 .mb40 {
 	margin-bottom: 40px;
 }
+
+.mb20 {
+	margin-bottom: 20px;
+}
 .mb22 {
 	margin-bottom: 22px;
+}
+.mb136 {
+	margin-bottom: 136px;
 }
