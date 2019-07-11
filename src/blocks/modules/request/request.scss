@@ -6,7 +6,7 @@ box-shadow: 0px 8px 30px rgba(55, 63, 81, 0.2);
 border-radius: 3px;
 width: 360px;
 max-width: 360px;
-height: 428px;
+// height: 428px;
 display: flex;
 flex-direction: column;
 padding: 24px;
@@ -24,15 +24,20 @@ padding: 24px;
 };
 
 @include xs-block () {
-    // width: 348px;
-    min-width: 280px;
+    padding: 16px 16px 24px 16px;
     max-width: 100%;
-    padding: 16px 24px;
+    // height: 395px;
 };
 
 &__tl {
 	 @include fnt-fira (#FFFFFF, 32px, 44px, 300);
 	 margin-bottom: 16px;
+		@include xs-block () {
+		 	font-weight: 300;
+			font-size: 18px;
+			line-height: 27px
+		};
+
 }
 &__inp {
 	@include fnt-fira (rgba(55, 63, 81, 0.6), 13px, 15px, normal);
@@ -61,6 +66,9 @@ padding: 24px;
 	max-height: 72px;
 	height: 72px;
 	padding-top: 10px;
+	@include xs-block () {
+		margin-bottom: 24px;
+	}
 }
 
 &__btn {

@@ -1,9 +1,16 @@
     .sc-main {
-        height: 768px;
         background-image: url(#{$imgFolder}hd-wd.png);
         background-size: cover;
         display: block;
         position: relative;
+        padding-bottom: 148px;
+        @include sm-block () {
+                padding-bottom: 128px;
+            };
+        @include xs-block () {
+                padding-bottom: 24px;
+            };
+
 
         &__itm {
             @include row-flex ();
@@ -23,24 +30,27 @@
             @include col();
             @include size(7);
             @include size-md(5.5);
-            @include size-sm(5.5);
+            @include size-sm(5);
             @include size-xs(12);
         }
 
         &__tl-bg {
             @include fnt-fira (#FFFFFF, 56px, 67px, 500);
             letter-spacing: 0.04em;
+
             @include sm-block () {
                 font-weight: 500;
                 font-size: 44px;
+            
             };
 
             @include xs-block () {
                 font-weight: 500;
-                    font-size: 24px;
-                    line-height: 29px;
-                    text-align: center;
-                    letter-spacing: 0.04em;
+                font-size: 24px;
+                line-height: 29px;
+                text-align: center;
+                letter-spacing: 0.04em;
+                margin-bottom: 16px;
                 }
            
         }
@@ -58,6 +68,7 @@
                 font-size: 18px;
                 line-height: 27px;
                 text-align: center;
+                margin-bottom: 24px;
             }
             
         }
@@ -83,10 +94,9 @@
                 transform: translate(0px, 5px);
             }
 
-            // &:hover {
-            //     width: 46px;
-            //     height: 46px;
-            // }
+            @include xs-block () {
+                display: none;
+            };
         }
         
     }
