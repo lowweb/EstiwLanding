@@ -6,8 +6,12 @@
     position: relative;
     padding: 80px 0px; 
 
-    & .sc-cap > span {
+    &__cap {
+        margin-bottom: 56px;
+    }
+    &__cap > span {
     	max-width: 639px;
+
     }
 	&__itm {
 		justify-content: center;
@@ -42,4 +46,39 @@
     	max-width: 685px;
 
     }
+
+    @include sm-block () {
+            &__cap {
+                margin-bottom: 40px;
+                font-size: 36px;
+                line-height: 43px;
+            }
+            &__rem {
+                margin-bottom: 40px;
+            }
+
+            &__name {
+                  @include col();
+                  @include size (12);
+            }
+
+            &__cap > span {
+                max-width: 480px;       
+
+            }
+        }
+        @include xs-block () {
+
+            &__cap {
+                margin-bottom: 24px;
+                font-size: 24px;
+                line-height: 29px;
+            }
+            &__rem {
+                margin-bottom: 24px;
+                font-size: 15px;
+                line-height: 22px;
+            }
+            
+        }
 }
