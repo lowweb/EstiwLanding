@@ -7,53 +7,68 @@
 
     &__itm {
     	@include row-flex ();
-    }
-    &__inf {
-    	// height: 728px;
-    	padding: 80px 0px;
+    	margin-bottom: 56px;
 
     	@include sm-block () {
-		   padding: 32px 0px;
-			& .sc-cap {
-				margin-bottom: 40px;
-		    }
-		    & .sc-scap {
-				margin-bottom: 40px;
-				font-size: 24px;
-				line-height: 32px;
-		    }
+			margin-bottom: 40px;
+		}
+		@include xs-block () {
+			margin-bottom: 40px;
+		}
+    }
 
+    &__inf {
+    	// height: 728px;
+    	padding: 80px 0px 24px 0px;
+
+    	@include sm-block () {
+		   padding: 56px 0px 16px 0px;
 		}		
 
 		@include xs-block () {
-		    padding: 24px 0px;
-		    & .sc-cap {
-				margin-bottom: 24px;
-		    }
-		    & .sc-scap {
-				margin-bottom: 24px;
-				font-size: 18px;
-				line-height: 27px;
-		    }
+		    padding: 40px 0px 0px 0px;
 		}
     }
 
     &__assoc {
-    	height: 379px;
     	background-color:#F3F3F3;
-    	padding: 56px 0px 64px 0px;
+    	padding: 56px 0px 24px 0px;
+
+    	&-cap {
+    		margin-bottom: 24px;
+    	}
+    	&-scap {
+    		margin-bottom: 56px;
+    	}
+
     	@include sm-block () {
-		   padding: 56px 0px;
+		   padding: 56px 0px 16px 0px;
+
+		   &-scap {
+		   	margin-bottom: 40px;
+		   }
 		}		
 
 		@include xs-block () {
-		    padding: 40px 0px;
+		    padding: 40px 0px 0px 0px;
+
+		    &-cap {
+    		font-size: 18px;
+			line-height: 27px;
+			margin-bottom: 16px;
+    		}
+
+    		&-scap {
+    			margin-bottom: 24px;
+    		}
+
 		}
     }
 	
 	&__bl-inf{
 		@include col();
         @include size(4);
+
         background: #FFFFFF;
 		border: 1px solid #D5D7E1;
 		box-sizing: border-box;
@@ -64,6 +79,10 @@
 		justify-content: center;
 		padding: 16px;
 		text-align: center;
+
+		&-cap {
+			margin-bottom: 7px;
+		}
 
 		@include sm-block () {
 			& .fnt-fr--3244 {
@@ -90,10 +109,15 @@
 		@include col();
         @include size(3);
 
-		@include sm-block () {
-			@include size(6);
+		@media only screen and (max-width: 980px) {
+            @include size(6);
 			margin-bottom: 24px;
-		}
+        }
+
+		// @include sm-block () {
+		// 	@include size(6);
+		// 	margin-bottom: 24px;
+		// }
 		@include xs-block () {
 			@include size(12);
 			margin-bottom: 16px;
@@ -104,6 +128,18 @@
 	&__assoc-img {
 		@include col();
         @include size(3);
+        display: flex;
+		margin-bottom: 24px;
+		align-items: center;
+    	justify-content: center;
+
+		&:last-child {
+			margin-bottom: 0;
+		}
+
+
+		& > img {
+		margin: 0 auto;
         background-blend-mode: color, normal;
 		opacity: 0.4;
 		filter: grayscale(1);
@@ -113,6 +149,42 @@
 			filter: grayscale(0);	
 		}
 
+		}
+		
+		@include sm-block {
+			
+		}
+
+		@include xs-block () {
+			@include size(12);
+			height: 128px;
+			 
+		}
+
 	}
+
+	&__cap, &__scap {
+		margin-bottom: 56px;
+
+		@include sm-block () {
+			margin-bottom: 40px;
+		}
+		@include xs-block () {
+			margin-bottom: 24px;
+		}
+	}
+
+	&__scap {
+		@include sm-block () {
+			font-size: 24px;
+			line-height: 32px;
+		}
+		@include xs-block () {
+			font-size: 18px;
+			line-height: 27px;
+		}
+	}
+
+					
 
 }

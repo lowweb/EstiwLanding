@@ -64,8 +64,11 @@ padding: 24px;
 
 	margin-bottom: 32px;
 	max-height: 72px;
+	min-height: 36px;
 	height: 72px;
 	padding-top: 10px;
+	min-width: 100%;
+	max-width: 100%;
 	@include xs-block () {
 		margin-bottom: 24px;
 	}
