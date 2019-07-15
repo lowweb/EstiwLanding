@@ -1,12 +1,21 @@
 .sc-integr {
 	&__inf{
 		margin: 80px 0px;
+
+		&-cap {
+			margin-bottom: 56px;
+		}
+		&-scap {
+			margin-bottom: 24px;
+		}
 	}
 
 	&__ml {
 		margin-left: 96px;
 	}
-	
+	&__serv {
+		margin-bottom: 24px;
+	}
 	&__serv-itm {
 		@include col();
 		@include size(5.45);
@@ -18,9 +27,7 @@
 
 	&__cargo-itm {
 		@include col();
-		@include size(5.45);
-
-		
+		@include size(5.45);	
 	}
 
 	&__dtd {
@@ -28,9 +35,19 @@
 		padding: 56px 0px;
 		position: relative;
 		min-height: 435px;
+		&-cap {
+			margin-bottom: 16px;
+
+		}
+		&-tx {
+			margin-bottom: 16px;
+			&:last-child {
+				margin-bottom: 0;
+			}
+		}
 	}
 	&__tx {
-		@include col-ib();
+		@include col();
 		@include size(8.5);
 
 
@@ -41,20 +58,6 @@
     position: absolute;
     top: 0;
     display: flex;
-
-  //   &:before {
-  //   	content: '';
-  //   	flex: 1;
-  //   }
-		// &:after{
-		// 	content: ''
-		// 	background-size: cover;
-		// 	max-width: 466px;
-		// 	max-height: 351px;
-		// 	// position: absolute;
-		// 	// right: -200px;
-		// 	background-image: url(#{$imgFolder}car.png)
-		// }
 		
 	}
 
@@ -85,4 +88,77 @@
 	&__itm {
 		position: relative;
 	}
+
+	@include sm-block () { 
+		&__inf{
+			margin: 56px 0;
+		}
+
+		&__ml {
+			margin-left: 0px;
+		}
+		&__serv-itm {
+			@include size(6);	
+		}
+
+		&__cargo-itm {
+			@include size(6);	
+		}
+		&__dtd {
+			&-cap {
+				font-size: 32px;
+				line-height: 38px;
+			}
+			&-tx{
+				font-size: 16px;
+				line-height: 160%;
+			}
+		}
+	}
+
+	@include xs-block () {
+		&__inf{
+			margin: 40px 0;
+			&-scap {
+				font-size: 18px;
+				line-height: 27px;
+			}
+		}
+		&__serv-itm {
+			@include size(12);
+			font-size: 15px;
+			line-height: 140%;	
+		}
+		&__cargo-itm {
+			font-size: 15px;
+			line-height: 28px;
+			@include size(12);	
+		}
+
+		&__car {
+			@include col ();
+			@include size(12);
+		}
+		&__blank {
+			@include col ();
+			@include size(12);
+		}
+
+		&__tx {
+			@include size(12);
+		}
+
+		&__img {
+			position: relative;
+			display: block;
+			margin: 0 auto;
+		}
+
+		&__car {
+			margin-top: 16px;
+			display: flex;
+    		justify-content: center;
+		}
+	}
+
 }

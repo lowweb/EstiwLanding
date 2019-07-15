@@ -9,10 +9,7 @@
 		line-height: 43px;
 	}
 	
-	@include xs-block () {
-		font-size: 24px;
-		line-height: 29px;
-	}
+
 
 	& > span {
 		flex: 0 0 auto;
@@ -27,6 +24,18 @@
 		background-color: #D5D7E1;
 		display: inline-block;
 	}
+
+	@include xs-block () {
+		font-size: 24px;
+		line-height: 29px;
+
+		& > span {
+			width: 100%;
+   			max-width: none;
+   			margin: 0 auto;
+		}
+	}
+	
 }
 
 .sc-scap {
@@ -35,4 +44,7 @@
 	&--180 {
 		line-height: 180%;
 	}
+
+
+
 }

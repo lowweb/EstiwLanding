@@ -80,7 +80,6 @@
 
             &__itm {
                 max-width: 70%;
-                margin: 0 auto;
             }
         }
         @include xs-block () {
@@ -108,7 +107,6 @@
 
             &__itm {
                 max-width: 100%;
-                margin: 0 auto;
                 justify-content: flex-start;
             }
 

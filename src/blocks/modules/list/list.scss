@@ -1,7 +1,7 @@
 .list {
 	@include fnt-fira (#373F51, 17px, 180%, normal);
 		display: flex;
-		align-items: center;
+		align-items: flex-start;
 
 		&:before {
 			align-self: flex-start;
