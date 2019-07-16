@@ -1,6 +1,6 @@
 .sc-integr {
 	&__inf{
-		margin: 80px 0px;
+		padding: 80px 0px;
 
 		&-cap {
 			margin-bottom: 56px;
@@ -91,7 +91,7 @@
 
 	@include sm-block () { 
 		&__inf{
-			margin: 56px 0;
+			padding: 56px 0;
 		}
 
 		&__ml {
@@ -118,10 +118,16 @@
 
 	@include xs-block () {
 		&__inf{
-			margin: 40px 0;
+			padding: 40px 0;
+
+			&-cap{
+				margin-bottom: 40px;
+			}
+
 			&-scap {
 				font-size: 18px;
 				line-height: 27px;
+				margin-bottom: 11px;
 			}
 		}
 		&__serv-itm {

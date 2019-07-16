@@ -15,4 +15,9 @@
 			flex: 0 0 auto;
 
 		}
+
+	@include xs-block () {
+		font-size: 15px;
+		line-height: 28px;
+	 }
 }

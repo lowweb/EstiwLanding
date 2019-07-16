@@ -4,8 +4,11 @@
 	background-repeat: no-repeat;
 	background-position: 0px 178px;
 	&__inf {
-		height: 801px;
-		padding-top: 80px;
+		// height: 801px;
+		padding: 80px 0 53px 0;
+		&-cap {
+			margin-bottom: 80px;
+		}
 
 	}
 	&__ocean-fr {
@@ -26,5 +29,48 @@
 	&__check-itm {
 		@include col();
         @include size(4);
+	}
+
+	@media only screen and (max-width: 1290px) {
+  //          &__inf {
+		// 	&-cap {
+		// 		max-width: 421px;
+		// 		text-align: center;
+		// 	}
+		// }
+       }
+	@include sm-block () {
+		&__inf {
+			padding: 56px;
+			&-cap {
+				margin-bottom: 52px;
+			}
+		}
+
+		&__ocean-fr {	
+       	 	@include size(6);
+		}
+
+		&__advant {
+			
+       	 	@include size(6);
+		}
+	}
+
+	@include xs-block () {
+		&__inf {
+			padding: 40px;
+			&-cap {
+				margin-bottom: 40px;
+			}
+		}
+		&__ocean-fr {	
+       	 	@include size(12);
+		}
+
+		&__advant {
+			
+       	 	@include size(12);
+		}
 	}
 }
