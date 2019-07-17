@@ -1,14 +1,14 @@
 .box-gr {
 	@include fnt-fira (#373F51, 17px, 180%, normal);
 	display: flex;
-	flex-wrap: no-wrap;
+	flex-wrap: nowrap;
 	counter-reset: num;
   	list-style: none;
 
 	&__item {
 		position: relative;
 		max-width: 380px;
-		max-height: 134px;
+		// max-height: 134px;
 		overflow: hidden;
 		padding: 16px 25px 16px 26px;
 		background-repeat: no-repeat;

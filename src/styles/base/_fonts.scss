@@ -40,14 +40,14 @@
 }
 
 .fnt-lc--17 {
-	@include fnt-fira (#373F51, 17px, 180%, normal);
+	@include fnt-lucida (#373F51, 17px, 180%, normal);
 }
 .ftn-lc--1421 {
 	@include fnt-lucida (rgba(55, 63, 81, 0.7), 14px, 21px, normal);
 
 }
 .fnt-lc--1624 {
-	@include fnt-fira (#373F51, 16px, 24px, normal);
+	@include fnt-lucida (#373F51, 16px, 24px, normal);
 }
 
 .fnt--bld {

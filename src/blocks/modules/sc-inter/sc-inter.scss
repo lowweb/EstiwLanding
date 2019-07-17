@@ -5,7 +5,7 @@
 	background-position: 0px 178px;
 	&__inf {
 		// height: 801px;
-		padding: 80px 0 53px 0;
+		padding: 80px 0 0px 0;
 		&-cap {
 			margin-bottom: 80px;
 		}
@@ -40,17 +40,19 @@
 		margin-bottom: 46px;
 	}
 
-	@media only screen and (max-width: 1290px) {
-  //          &__inf {
-		// 	&-cap {
-		// 		max-width: 421px;
-		// 		text-align: center;
-		// 	}
-		// }
+	@media only screen and (max-width: 1020px) {
+           &__inf {
+			&-cap > span {
+				max-width: 421px;
+				text-align: center;
+				font-size: 36px;
+				line-height: 43px;
+			}
+		}
        }
 	@include sm-block () {
 		&__inf {
-			padding: 56px 0;
+			padding: 56px 0 0 0;
 			&-cap {
 				margin-bottom: 52px;
 			}
@@ -85,6 +87,9 @@
 			padding: 40px 0 0 0;
 			&-cap {
 				margin-bottom: 40px;
+				& > span {
+					max-width: none;
+				}
 			}
 		}
 		&__ocean-fr {	

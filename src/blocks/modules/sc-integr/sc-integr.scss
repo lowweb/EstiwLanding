@@ -131,9 +131,13 @@
 			}
 		}
 		&__serv-itm {
-			@include size(12);
-			font-size: 15px;
-			line-height: 140%;	
+			@include size(12);	
+			&:nth-last-child(-n+2) {
+				border-bottom: 1px dashed #B4B8C5;	
+			}
+			&:last-child {
+				border-bottom: none;
+			}
 		}
 		&__cargo-itm {
 			font-size: 15px;
