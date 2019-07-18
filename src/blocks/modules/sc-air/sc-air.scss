@@ -1,8 +1,8 @@
 .sc-air {
 	padding: 80px 0px;
 	background-image: url(#{$imgFolder}img-sky.png);
-	// background-size: cover;
-	background-size: 100% 420px;
+	background-position: top;
+	// background-size: 100% 420px;
 	background-repeat: no-repeat;
 
 	&__cap {
@@ -76,6 +76,7 @@
 
 			& .box-gr {
 				flex-wrap: wrap;
+				justify-content: center;
 				&__item {
 					font-size: 15px;
 					line-height: 22px;
