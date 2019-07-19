@@ -10,6 +10,7 @@
 	justify-content: center;
 	align-items: center;
 	flex-direction: column;
+	height: fit-content;
 	
 
 	&__tl {
@@ -28,6 +29,35 @@
 
 	&__tx {
 		display: block;
+
+		&-itm {
+			margin-bottom: 16px;
+			&:last-child {
+				margin-bottom: 0;
+			}
+		}
 	}
 
+	@include sm-block () {
+		font-size: 16px;
+		line-height: 160%;
+	}
+	@include xs-block () {
+		padding-top: 16px;
+		padding-bottom: 20px;
+		margin-bottom: 24px;
+		padding-left: 16px;
+		align-items: flex-start;
+		&:last-child {
+			margin-bottom: 0;
+		}
+
+		&__tl {
+			font-size: 18px;
+			line-height: 27px;
+		}
+
+		font-size: 15px;
+		line-height: 22px;
+	}
 }

@@ -37,4 +37,27 @@
 		}
 		
 	}
+	@include sm-block () {
+		&__itm {
+			font-size: 16px;
+			line-height: 160%;
+			&:before { 
+				margin-right: 21px;
+			}
+
+			& > span { 
+				padding-left: 16px;
+			}
+		}
+	}
+	@include xs-block () {
+		&__itm {
+			font-size: 15px;
+			line-height: 22px;
+			&:before {
+				margin-right: 11px;
+				font-size: 40px;
+			}
+		}
+	}
 }
