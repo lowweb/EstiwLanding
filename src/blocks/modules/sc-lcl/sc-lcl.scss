@@ -1,6 +1,6 @@
 .sc-lcl {
 	padding: 80px 0px;
-	background-image: url(../img/img-lcl.png);
+	background-image: url(#{$imgFolder}img-lcl.jpg);
 	background-size: cover;
 	background-repeat: no-repeat;
   background-position: 50% 50%;
@@ -23,6 +23,7 @@
   	}
 
     @include sm-block () {
+      background-image: url(#{$imgFolder}img-lcl--t.jpg);
       &__scap {
         font-size: 24px;
         line-height: 32px

@@ -67,12 +67,18 @@
     	width: calc(74%);
 	}
 	&__car {
-		    display: inline-block;
+		    display: flex;
+			flex-direction: column;
+			justify-content: center;
     		vertical-align: top;
     		width: calc(26%);
     		margin-right: 40px;
     		margin-left: 20px;
     		margin: auto 40px auto 0;
+
+    		& > img {
+    			flex: 0 0 auto;
+    		}
 	}
 	&__cargo {
 		position: absolute;

@@ -1,5 +1,5 @@
     .sc-main {
-        background-image: url(#{$imgFolder}hd-wd.png);
+        background-image: url(#{$imgFolder}hd-wd.jpg);
         background-size: cover;
         display: block;
         position: relative;
@@ -99,5 +99,9 @@
             };
         }
         
+
+        @include sm-block () {
+            background-image: url(#{$imgFolder}hd-wd--t.jpg);
+        }
     }
 

@@ -1,6 +1,6 @@
 .sc-ports {
    	// height: 596px;
-   	background-image: url(#{$imgFolder}ports.png);
+   	background-image: url(#{$imgFolder}ports.jpg);
     background-size: cover;
     display: block;
     position: relative;
@@ -49,6 +49,7 @@
     }
 
     @include sm-block () {
+        background-image: url(#{$imgFolder}ports--t.jpg);
         padding: 56px 0;
             &__cap {
                 margin-bottom: 40px;

@@ -1,7 +1,8 @@
 .sc-contacts {
-	// padding-top: 80px;
+	padding-bottom: 0px !important;
 	position: relative;
 	display: flex;
+	align-items: center;
 	flex-direction: column;
 
 	&__cap {
@@ -25,11 +26,7 @@
 
 	&__blk {
 		z-index: 3;
-		// position: absolute;
-		// top: 43%;
-		// transform: translate(0, -50%);
-		// margin: 0 auto;
-		// width: 100%;
+		width: 100%;
 
 		& .card {
 			@include col ();

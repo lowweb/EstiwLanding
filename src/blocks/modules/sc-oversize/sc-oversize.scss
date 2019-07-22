@@ -1,6 +1,6 @@
 .sc-oversize {
 	padding: 80px 0;
-	background-image: url(../img/img-oversize.png);
+	background-image: url(#{$imgFolder}img-oversize.jpg);
 	background-size: cover;
 	background-repeat: no-repeat;
   	background-position: 50% 50%;
@@ -25,6 +25,7 @@
 
 
   	@include sm-block() {
+      background-image: url(#{$imgFolder}img-oversize--t.jpg);
   		&__cap {
   			font-size: 36px;
 			line-height: 43px;
