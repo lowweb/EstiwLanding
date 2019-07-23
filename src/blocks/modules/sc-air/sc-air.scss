@@ -51,7 +51,7 @@
 		}
 
 		&__img {
-			& > img {
+			& > img, & > picture {
 				margin-bottom: 16px;
 			}
 		}
@@ -104,7 +104,7 @@
 			@include size(12);
 			order: 1;
 			margin-bottom: 24px;
-			& > img {
+			& > img, & > picture {
 				margin-bottom: 0px;
 			}
 		}
