@@ -1,4 +1,10 @@
-@import url('https://fonts.googleapis.com/css?family=Fira+Sans:200,300,400,500,600,700,800,900&display=swap');
+@font-face {
+  font-family: 'Fira Sans';
+  font-style: normal;
+  src: local('Fira Sans Regular'), local('FiraSans-Regular'),
+       url('../fonts/fira-sans.woff2') format('woff2'), /* Chrome 26+, Opera 23+, Firefox 39+ */
+       url('../fonts/fira-sans.woff') format('woff'); /* Chrome 6+, Firefox 3.6+, IE 9+, Safari 5.1+ */
+}
 
 @font-face {font-family: "Lucida Grande";
     src: url("//db.onlinewebfonts.com/t/cab0131554a65c43f6e73aafff8a9667.eot");

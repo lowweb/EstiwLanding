@@ -28,7 +28,6 @@ h1, h2, h3, h4, h5, h6, ul {
 	text-decoration: none;
 	list-style-type: none;
 	box-sizing: border-box;
-	// outline: none; //так дизайнер попросил
 }
 
 html 
@@ -55,13 +54,10 @@ body {
 
 
 .main-content {
-	// overflow: scroll;
 	display: flex;
 	flex-direction: column;
 	font-family: Fira Sans;
 	font-style: normal;
-	// min-width: 320px;
-	// height: 100%;
 }
 
 a {
@@ -83,42 +79,3 @@ a {
 	flex-direction: row;
 	flex-wrap: wrap;
 }
-
-// .mb7	{
-// 	margin-bottom: 7px;
-// }
-
-// .mb56 {
-// 	margin-bottom: 56px;
-// }
-
-// .mb64 {
-// 	margin-bottom: 64px;
-// }
-
-// .mb16 {
-// 	margin-bottom: 16px;
-// }
-// .mb24 {
-// 	margin-bottom: 24px;
-// }
-//удалить .mb28 {
-// 	margin-bottom: 28px;
-// }
-
-// .mb80 {
-// 	margin-bottom: 80px;
-// }
-// .mb40 {
-// 	margin-bottom: 40px;
-// }
-
-//удалить .mb20 {
-// 	margin-bottom: 20px;
-// }
-// .mb22 {
-// 	margin-bottom: 22px;
-// }
-// .mb136 {
-// 	margin-bottom: 136px;
-// }

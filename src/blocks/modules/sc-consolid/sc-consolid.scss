@@ -20,6 +20,9 @@
 	&__inf {
 		@include col();
         @include size(6);
+        & > ul {
+       			margin-bottom: 24px;
+       	}
 	}
 
 	& .sc-scap {
@@ -48,9 +51,7 @@
 
 		&__inf {
        		@include size(12);
-       		& > ul {
-       			margin-bottom: 24px;
-       		}
+       		
 		}
 	}
 }
