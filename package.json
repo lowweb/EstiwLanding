@@ -1,11 +1,7 @@
 {
-    "name": "gulp-scss-starter",
-    "description": "Frontend development with pleasure",
-    "author": "Andrey Gorokhov",
-    "repository": {
-        "type": "git",
-        "url": "https://github.com/andreyalexeich/gulp-scss-starter.git"
-    },
+    "name": "estiw-landing",
+    "description": "Estiw landing page",
+    "author": "",
     "license": "MIT",
     "scripts": {
         "dev": "gulp",

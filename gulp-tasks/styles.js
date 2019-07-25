@@ -22,7 +22,7 @@ gulp.task("styles", () => {
         .pipe(gulpif(!production, sourcemaps.init()))
         .pipe(plumber())
         .pipe(sass())
-        .pipe(groupmedia())
+        .pipe(gulpif(production, groupmedia()))
         .pipe(gulpif(production, autoprefixer({
             cascade: false,
             grid: true
