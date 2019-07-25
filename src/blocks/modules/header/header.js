@@ -1,7 +1,19 @@
 window.onscroll = function() {scrollFunction()};
 
+
+
+  function getOffset(el) {
+  const rect = el.getBoundingClientRect();
+  return {
+    left: rect.left + window.scrollX,
+    top: rect.top + window.scrollY
+  };
+}
+
 function scrollFunction() {
-  if (document.body.scrollTop > 700 || document.documentElement.scrollTop > 700) {
+	 var el=getElementsByClassName('sc-main__scrl-anch')[0];
+	 console.log(getOffset(el).top);
+  if (document.body.scrollTop > getOffset(el).top || document.documentElement.scrollTop > getOffset(el).top) {
     document.getElementsByClassName('hd')[0].classList.add('hd--fix');
     document.getElementsByClassName('hd')[0].classList.remove('hd--tr');
   } else {
