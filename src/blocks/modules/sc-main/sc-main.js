@@ -1,5 +1,3 @@
- 
-
-  document.getElementById("btn-scroll").onclick = function() {
-	document.getElementsByClassName('sc-main__scrl-anch')[0].scrollIntoView({block: 'start',behavior: 'smooth' });
+document.getElementById("btn-scroll").onclick = function() {
+	document.getElementById('scrl-anch').scrollIntoView({block: 'start',behavior: 'smooth' });
 };

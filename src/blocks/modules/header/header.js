@@ -1,19 +1,18 @@
 window.onscroll = function() {scrollFunction()};
 
-
-
-  function getOffset(el) {
+//функция определения положение яэлемента
+function getOffset(el) {
   const rect = el.getBoundingClientRect();
   return {
     left: rect.left + window.scrollX,
     top: rect.top + window.scrollY
   };
 }
+//определили якорь
+var el=document.getElementById('scrl-anch');
 
 function scrollFunction() {
-	 var el=getElementsByClassName('sc-main__scrl-anch')[0];
-	 console.log(getOffset(el).top);
-  if (document.body.scrollTop > getOffset(el).top || document.documentElement.scrollTop > getOffset(el).top) {
+  if (document.body.scrollTop > getOffset(el).top - 20 || document.documentElement.scrollTop > getOffset(el).top - 20) {
     document.getElementsByClassName('hd')[0].classList.add('hd--fix');
     document.getElementsByClassName('hd')[0].classList.remove('hd--tr');
   } else {

@@ -76,7 +76,7 @@
             
         }
         
-        &__anch {
+        &__anch-btn {
             position: absolute;
             left: 50%;
             transform: translate(-50%, 0%);
@@ -108,11 +108,13 @@
         }
 
         @include sm-block () {
-            &__anch {
+            background-image: url(#{$imgFolder}hd-wd--t.jpg);
+            &__anch-btn {
                 bottom: 40px;
             }
-
-            background-image: url(#{$imgFolder}hd-wd--t.jpg);
+            &__scrl-anch {
+                bottom: 80px;
+             }
         }
     }
 
