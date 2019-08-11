@@ -20,3 +20,11 @@ function scrollFunction() {
     document.getElementsByClassName('hd')[0].classList.add('hd--tr');
   }
 }
+
+document.getElementById("hdLogo").onclick = function() {
+  window.scrollTo({ top: 0, behavior: 'smooth' });
+};
+document.getElementById("sendRequest").onclick = function() {
+  window.scrollTo({ top: 0, behavior: 'smooth' });
+};
+

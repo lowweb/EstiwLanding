@@ -136,7 +136,7 @@
 
         &__video { 
             position: absolute;
-            opacity: 0.5;
+            // opacity: 0.5;
             top: 50%;
             left: 50%;
             min-width: 100%;
@@ -145,7 +145,7 @@
             height: auto;
             z-index: -10;
             transform: translateX(-50%) translateY(-50%);
-            background-size: cover;
+            // background-size: cover;
             transition: 1s opacity;
         }
 
