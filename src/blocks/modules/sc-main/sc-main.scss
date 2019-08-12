@@ -3,6 +3,7 @@
         position: relative;
         padding-bottom: 148px;
         min-height: 768px;
+        overflow: hidden;
 
         @include sm-block () {
                 padding-bottom: 128px;
