@@ -14,6 +14,7 @@ if (window.matchMedia("(min-width: 767px)").matches) {
 	videoElm.setAttribute('preload', 'auto');
 	videoElm.setAttribute('muted', 'muted');
 	videoElm.setAttribute('class', 'sc-main__video');
+	videoElm.setAttribute('id', 'backVideo');
 
 	var mp4Source = document.createElement('source');
 	mp4Source.setAttribute('src', 'img/sc-main-video.mp4');
@@ -22,4 +23,7 @@ if (window.matchMedia("(min-width: 767px)").matches) {
 
 	videoCont.style.backgroundColor = '#00171F';
 	videoCont.appendChild(videoElm);
+
+
+
 }
