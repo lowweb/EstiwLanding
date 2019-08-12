@@ -46,6 +46,8 @@ padding: 24px;
 	margin-bottom: 20px;
 	height: 36px;
 	padding-left: 16px;
+
+
 	&::placeholder { /* Chrome, Firefox, Opera, Safari 10.1+ */
  	 color: rgba(55, 63, 81, 0.6);
  	 opacity: 1; /* Firefox */
@@ -68,6 +70,14 @@ padding: 24px;
 	&:invalid {
 		background: #F3F3F3;
 		border: 1px solid #E63946;
+	}
+	
+
+	&-err {
+		 @include fnt-lucida (rgba(255, 255, 255, 0.8), 12px, 14px, normal);	
+		 align-self: flex-end;
+		 margin-top: -20px;
+		 margin-bottom: 10px;
 	}
 }
 
