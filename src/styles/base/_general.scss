@@ -80,3 +80,10 @@ a {
 	flex-direction: row;
 	flex-wrap: wrap;
 }
+
+input:invalid {
+		background: #F3F3F3;
+		border: 1px solid #E63946;
+	}
+
+.grecaptcha-badge { visibility: hidden; }
