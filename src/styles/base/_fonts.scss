@@ -1,11 +1,18 @@
-@font-face {
-  font-family: 'Fira Sans';
-  font-style: normal;
-  src: local('Fira Sans Regular'), local('FiraSans-Regular'),
-       url('../fonts/fira-sans.woff2') format('woff2'),
-       url('../fonts/fira-sans.woff') format('woff'); 
-}
+// @font-face {
+//   font-family: 'Fira Sans';
+//   font-style: normal;
+//   src: local('Fira Sans'),
+//        url('../fonts/fira-sans.woff2') format('woff2'),
+//        url('../fonts/fira-sans.woff') format('woff'); 
+// }
 
+
+// @font-face {
+//   font-family: 'Klavika';
+//   src: url(../fonts/Klavika-Regular.otf) format('truetype') font-weight-normal,
+//        url(../fonts/Klavika-Bold.otf) format('truetype') font-weight-bold,
+//        url(../fonts/Klavika-Bold-Italic.otf) format('truetype') font-italic font-weight-bold;
+// }
 @font-face {
 	font-family: "Lucida Grande";
     src: url("../fonts/lucida-grande.woff2") format("woff2"),

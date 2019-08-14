@@ -63,14 +63,18 @@ body {
 
 a {
 	color: #0073BE;
+	fill: #0073BE;
 	&:hover{
 		color: #5C2D91;
+		fill: #5C2D91;
 	}
 
 	&.no-hov {
 		color: inherit;
+		fill: #0073BE; 
 	&:hover{
-		color: inherit;
+		color: #5C2D91;
+		fill: #5C2D91;
 		}
 	}
 }
@@ -81,9 +85,8 @@ a {
 	flex-wrap: wrap;
 }
 
-input:invalid {
-		background: #F3F3F3;
-		border: 1px solid #E63946;
-	}
-
 .grecaptcha-badge { visibility: hidden; }
+
+svg path {
+    fill: inherit;
+}

@@ -75,7 +75,7 @@ flex-direction: column;
 		box-shadow: inset 0px 0px 8px rgba(0, 115, 190, 0.4);
 	}
 	
-	&:invalid {
+	& .input-validation-error {
 		background: #F3F3F3;
 		border: 1px solid #E63946;
 	}
@@ -124,6 +124,10 @@ flex-direction: column;
 	text-align: center;
 	width: 100%;
 	margin-top: 24px;
+
+	 & > a {
+	 	color: rgba(255, 255, 255, 0.7);
+	 }
 }
 
 @include sm-block () {

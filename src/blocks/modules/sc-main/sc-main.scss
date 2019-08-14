@@ -47,10 +47,13 @@
         &__tl-bg {
             @include fnt-fira (#FFFFFF, 56px, 67px, 500);
             letter-spacing: 0.04em;
+            margin-bottom: 16px;
+            text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.3);
 
             @include sm-block () {
                 font-weight: 500;
                 font-size: 44px;
+                margin-bottom: 20px;
             
             };
 
@@ -60,7 +63,7 @@
                 line-height: 29px;
                 text-align: center;
                 letter-spacing: 0.04em;
-                margin-bottom: 16px;
+                margin-bottom: 8px;
                 }
            
         }

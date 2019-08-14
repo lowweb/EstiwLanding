@@ -5,4 +5,10 @@
 	overflow-x: auto;
 	display: flex;
 	flex-wrap: nowrap;
+
+	&::-webkit-scrollbar {
+		display: none; 
+		width: 0;
+
+	}
 }

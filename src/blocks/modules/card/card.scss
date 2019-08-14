@@ -28,7 +28,8 @@
 	}
 
 	&__tx {
-		display: block;
+		display: flex;
+		flex-direction: column;
 
 		&-itm {
 			margin-bottom: 16px;
