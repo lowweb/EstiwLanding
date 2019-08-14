@@ -83,6 +83,7 @@
 	}
 
 	@include xs-block () {
+		background-image: url(#{$imgFolder}img-inter-back--t.png);
 		&__inf {
 			padding: 40px 0 0 0;
 			&-cap {
