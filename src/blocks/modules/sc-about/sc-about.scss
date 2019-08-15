@@ -1,5 +1,4 @@
 .sc-about {
-	// height: 768px;
     background-color: #ffffff;
     background-size: cover;
     display: flex;
@@ -8,32 +7,36 @@
 
     &__itm {
     	@include row-flex ();
-    	margin-bottom: 56px;
+		margin-bottom: 56px;
+    	&:last-child {
+    		 margin-bottom: 0px;
+    	}
+    	
 
     	@include sm-block () {
-			margin-bottom: 40px;
-		}
-		@include xs-block () {
-			margin-bottom: 40px;
+    		margin-bottom: 40px;
+    		&:last-child {
+    		 margin-bottom: 0px;
+    		}
+			
 		}
     }
 
     &__inf {
-    	// height: 728px;
-    	padding: 80px 0px 24px 0px;
+    	padding: 80px 0px 80px 0px;
 
     	@include sm-block () {
-		   padding: 56px 0px 16px 0px;
+		   padding: 56px 0px 56px 0px;
 		}		
 
 		@include xs-block () {
-		    padding: 40px 0px 0px 0px;
+		    padding: 40px 0px;
 		}
     }
 
     &__assoc {
     	background-color:#F3F3F3;
-    	padding: 56px 0px 24px 0px;
+    	padding: 56px 0px 64px 0px;
 
     	&-cap {
     		margin-bottom: 24px;
@@ -43,7 +46,7 @@
     	}
 
     	@include sm-block () {
-		   padding: 56px 0px 16px 0px;
+		   padding: 56px 0px 56px 0px;
 
 		   &-scap {
 		   	margin-bottom: 40px;
@@ -51,7 +54,7 @@
 		}		
 
 		@include xs-block () {
-		    padding: 40px 0px 0px 0px;
+		    padding: 40px 0px;
 
 		    &-cap {
     		font-size: 18px;
@@ -76,7 +79,6 @@
 		border-radius: 3px;
 		display: flex;
 		flex-direction: column;
-		align-items: center;
 		justify-content: center;
 		padding: 16px;
 		text-align: center;
@@ -115,10 +117,6 @@
 			margin-bottom: 24px;
         }
 
-		// @include sm-block () {
-		// 	@include size(6);
-		// 	margin-bottom: 24px;
-		// }
 		@include xs-block () {
 			@include size(12);
 			margin-bottom: 16px;
@@ -133,6 +131,12 @@
 		margin-bottom: 24px;
 		align-items: center;
     	justify-content: center;
+    	 & > picture {
+    	 	width: 100%;
+    	 	display: flex;
+    	 	justify-content: center;
+    	 	align-items: center;
+    	 }
 
 		&:last-child {
 			margin-bottom: 0;

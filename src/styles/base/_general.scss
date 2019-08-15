@@ -77,6 +77,9 @@ a {
 		fill: #5C2D91;
 		}
 	}
+	& svg path {
+    	fill: inherit;
+	}
 }
 
 .fx-rw {
@@ -87,6 +90,3 @@ a {
 
 .grecaptcha-badge { visibility: hidden; }
 
-svg path {
-    fill: inherit;
-}
