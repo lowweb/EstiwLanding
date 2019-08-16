@@ -28,3 +28,12 @@ document.getElementById("sendRequest").onclick = function() {
   window.scrollTo({ top: 0, behavior: 'smooth' });
 };
 
+
+document.getElementById("mainpage").onclick = function() {
+  closeMenu ();
+};
+function closeMenu () {
+  document.getElementsByClassName('hd')[0].classList.toggle('hd--opn');
+  document.getElementById("menu-btn").classList.toggle('ham--active');
+};
+
