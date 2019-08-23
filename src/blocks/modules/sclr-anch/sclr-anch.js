@@ -1,6 +1,8 @@
 function closeMenu () {
-	document.getElementsByClassName('hd')[0].classList.toggle('hd--opn');
-	document.getElementById("menu-btn").classList.toggle('ham--active');
+  if (document.querySelector('.hd').classList.contains('hd--opn')) {
+    document.getElementsByClassName('hd')[0].classList.remove('hd--opn');
+    document.getElementById("menu-btn").classList.remove('ham--active');
+ };
 }
 
 document.getElementById("contacts").onclick = function() {
@@ -17,7 +19,7 @@ document.getElementById("service").onclick = function() {
 
 document.getElementById("aboutus").onclick = function() {
   event.preventDefault();
-  document.getElementById('scrl-anch').scrollIntoView({block: 'start',behavior: 'smooth' });
+  document.getElementById('scrl-about').scrollIntoView({block: 'start',behavior: 'smooth' });
   closeMenu ();
 };
 

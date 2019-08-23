@@ -9,10 +9,10 @@ function getOffset(el) {
   };
 }
 //определили якорь
-var el=document.getElementById('scrl-anch');
+var el=document.getElementById('scrl-about');
 
 function scrollFunction() {
-  if (document.body.scrollTop > getOffset(el).top - 20 || document.documentElement.scrollTop > getOffset(el).top - 20) {
+  if (document.body.scrollTop > getOffset(el).top-90 || document.documentElement.scrollTop > getOffset(el).top - 20) {
     document.getElementsByClassName('hd')[0].classList.add('hd--fix');
     document.getElementsByClassName('hd')[0].classList.remove('hd--tr');
   } else {
@@ -28,12 +28,4 @@ document.getElementById("sendRequest").onclick = function() {
   window.scrollTo({ top: 0, behavior: 'smooth' });
 };
 
-
-document.getElementById("mainpage").onclick = function() {
-  closeMenu ();
-};
-function closeMenu () {
-  document.getElementsByClassName('hd')[0].classList.toggle('hd--opn');
-  document.getElementById("menu-btn").classList.toggle('ham--active');
-};
 
